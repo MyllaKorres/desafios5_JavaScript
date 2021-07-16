@@ -1,0 +1,63 @@
+﻿.titulo {
+    padding-left:25px;
+    padding-right:15px;
+}
+
+.nav-item {
+    padding-right: 25px;
+}
+
+.entrada {
+    padding-top:5px;
+}
+
+.saida {
+    padding-top: 20px;
+}
+
+.bloco1 {
+    padding-left: 15px; 
+    padding-top: 10px; 
+    padding-bottom: 5px; 
+    background-color: lightseagreen;
+}
+
+.bloco2 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #F7F27D;
+}
+
+.bloco3 {
+    background-color: darkred;
+    color: white;
+    padding: 7px;
+}
+
+.borda {
+    border-top-width: medium;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.btn-close {
+    font-size: 15px;
+    float: right;
+    align-content: flex-start;
+}
+
+.campo {
+    font-size: 15px;
+    width: 100px;
+}
+
+.texto1 {
+    color: seagreen;
+    font-size: 20px;
+}
+
+.texto2 {
+    color: darkred;
+    font-size: 20px;
+}

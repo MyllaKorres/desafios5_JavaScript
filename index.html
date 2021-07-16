@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DESAFIOS - JavaScript</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $(window).scrollTop(0);
+        });
+    </script>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand">
+            <h2 class="titulo">FUNDAMENTOS ARITMÉTICOS EM JAVASCRIPT</h2>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafio1"><b>DESAFIO 1</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafio2"><b>DESAFIO 2</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafio3"><b>DESAFIO 3</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafio4"><b>DESAFIO 4</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafio5"><b>DESAFIO 5</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="desafio1">
+        <div class="container-fluid bloco1">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>DESAFIO 1 - QUANTIDADE DE NÚMEROS POSITIVOS</h2>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-outline-dark" onclick="botao1()">TESTAR</button>
+                </div>
+            </div>
+            <p>
+                Crie um programa que leia 6 valores. Você poderá receber valores negativos e/ou positivos
+                como entrada, devendo desconsiderar os valores nulos. Em seguida, apresente a quantidade
+                de valores positivos digitados.
+                <h4 class="entrada">Entrada</h4>
+                Você receberá seis valores, negativos e/ou positivos.
+                <h4 class="saida">Saída</h4>
+                Exiba uma mensagem dizendo quantos valores positivos foram lidos assim como é exibido
+                abaixo no exemplo de saída. Não esqueça da mensagem "valores positivos" ao final.
+            </p>
+        </div>
+        <div class="container-fluid dados1 bloco2">
+            <p class="texto1">
+                <button type="button" class="btn-close" onclick="fecha1()"></button>
+                Insira 6 números separados por espaço:
+                <input class="text-center campo" id="num1" placeholder="0 0 0 0 0 0">
+                <button class="btn btn-outline-success" onclick="recebe()">OK</button>
+            </p>
+            <div class="resposta1 texto2">
+                <p>
+                    Resposta:
+                    <output id="resp1"></output>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="desafio2">
+        <div class="container-fluid bloco1 borda">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>DESAFIO 2 - EXIBINDO NÚMEROS PARES</h2>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-outline-dark" onclick="botao2()">TESTAR</button>
+                </div>
+            </div>
+            <p>
+                Crie um programa que leia um número e mostre os números pares até esse número, inclusive ele mesmo.
+                <h4 class="entrada">Entrada</h4>
+                Você receberá 1 valor inteiro N, onde N > 0.
+                <h4 class="saida">Saída</h4>
+                Exiba todos os números pares até o valor de entrada, sendo um em cada linha.
+            </p>
+        </div>
+        <div class="container-fluid dados2 bloco2">
+            <p class="texto1">
+                <button type="button" class="btn-close" onclick="fecha2()"></button>
+                Insira um número inteiro maior que zero:
+                <input class="text-center campo" id="num2" placeholder="0">
+                <button class="btn btn-outline-success" onclick="mostra()">OK</button>
+            </p>
+            <div class="resposta2 texto2">
+                <p>Pares:</p>
+                <p id="resp2"></p>
+            </div>
+        </div>
+    </section>
+    <section id="desafio3">
+        <div class="container-fluid bloco1 borda">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>DESAFIO 3 - ANÁLISE DE NÚMEROS</h2>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-outline-dark" onclick="botao3()">TESTAR</button>
+                </div>
+            </div>
+            <p>
+                Você deve fazer a leitura de 5 valores inteiros. Em seguida mostre quantos valores informados
+                são pares, quantos valores informados são ímpares, quantos valores informados são positivos e
+                quantos valores informados são negativos.
+                <h4 class="entrada">Entrada</h4>
+                Você receberá 5 valores inteiros.
+                <h4 class="saida">Saída</h4>
+                Exiba a mensagem conforme o exemplo de saída abaixo, sendo uma mensagem por linha e não
+                esquecendo o final de linha após cada uma.
+            </p>
+        </div>
+        <div class="container-fluid dados3 bloco2">
+            <p class="texto1">
+                <button type="button" class="btn-close" onclick="fecha3()"></button>
+                Insira 5 números inteiros separados por espaço:
+                <input class="text-center campo" id="num3" placeholder="0 0 0 0 0">
+                <button class="btn btn-outline-success" onclick="exibe()">OK</button>
+            </p>
+            <div class="resposta3 texto2">
+                <p>Resposta:</p>
+                <p id="resp3"></p>
+
+            </div>
+        </div>
+    </section>
+    <section id="desafio4">
+        <div class="container-fluid bloco1 borda">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>DESAFIO 4 - CONTAGEM DE CÉDULAS</h2>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-outline-dark" onclick="botao4()">TESTAR</button>
+                </div>
+            </div>
+            <p>
+                Faça a leitura de um valor inteiro. Em seguida, calcule o menor número de notas possíveis
+                (cédulas) onde o valor pode ser decomposto. As notas que você deve considerar são de 100,
+                50, 20, 10, 5, 2 e 1. Na sequência mostre o valor lido e a relação de notas necessárias.
+                <h4 class="entrada">Entrada</h4>
+                Você receberá um valor inteiro N (0 < N < 1000000).
+                <h4 class="saida">Saída</h4>
+                Exiba o valor lido e a quantidade mínima de notas de cada tipo necessárias, seguindo o
+                exemplo de saída abaixo. Após cada linha deve ser imprimido o fim de linha.
+            </p>
+        </div>
+        <div class="container-fluid dados4 bloco2">
+            <p class="texto1">
+                <button type="button" class="btn-close" onclick="fecha4()"></button>
+                Insira um número inteiro entre 0 e 1000000:
+                <input class="text-center campo" id="num4" placeholder="0">
+                <button class="btn btn-outline-success" onclick="calcula()">OK</button>
+            </p>
+            <div class="resposta4 texto2">
+                <p>Resposta:</p>
+                <p id="resp4"></p>
+            </div>
+        </div>
+    </section>
+    <section id="desafio5">
+        <div class="container-fluid bloco1 borda">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>DESAFIO 5 - CONSUMO MÉDIO DO AUTOMÓVEL</h2>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-outline-dark" onclick="botao5()">TESTAR</button>
+                </div>
+            </div>
+            <p>
+                Você deve calcular o consumo médio de um automóvel onde será
+                informada a distância total percorrida (em Km) e o total de
+                combustível consumido (em litros).
+                <h4 class="entrada">Entrada</h4>
+                Você receberá dois valores: um valor inteiro X com a distância
+                total percorrida (em Km), e um valor real Y que representa o
+                total de combustível consumido, com um dígito após o ponto decimal.
+                <h4 class="saida">Saída</h4>
+                Exiba o valor que representa o consumo médio do automóvel (3 casas
+                após a vírgula), incluindo no final a mensagem "km/l".
+            </p>
+        </div>
+        <div class="container-fluid dados5 bloco2">
+            <p class="texto1">
+                <button type="button" class="btn-close" onclick="fecha5()"></button>
+                Insira a distância percorrida (Km) e o combustível consumido (litros) separados por espaço:
+                <input class="text-center campo" id="num5" placeholder="0 0.0">
+                <button class="btn btn-outline-success" onclick="consumo()">OK</button>
+                <div class="resposta5 texto2">
+                    <p>
+                        Resposta:
+                        <output id="resp5"></output>
+                    </p>
+                </div>
+            </p>
+        </div>
+    </section>
+    <footer class="container-fluid text-center bloco3 borda">Desenvolvido por Mylla Korres</footer>
+</body>
+</html>
